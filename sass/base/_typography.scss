@@ -1,0 +1,49 @@
+@use '../abstracts/' as *;
+
+body {
+    font-family: $font-family-base;
+    font-weight: $font-weight-400;
+    font-size: $size-400;
+    background: $colors-primary-900;
+    color: $colors-primary-200;
+    font-family: $font-family-base;
+    line-height: 1.5;
+  }
+
+h1, h2, h3 {
+    font-family: $font-family-accent;
+    font-weight: $font-weight-700;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp($size-600, $size-500 + 2vw, $size-800);
+    // makes font size growth with the size of the container
+    // clamp is going to control max size of container
+
+
+}
+
+h2 {
+    font-size: clamp($size-500, $size-400 + 1.5vw, $size-600);
+    // makes font size growth with the size of the container
+    // clamp is going to control max size of container
+}
+
+h3 {
+    font-size: $size-500;
+}
+p {
+    margin-top: 0;
+    font-size: $size-400;
+}
+a, a:link, a:visited{
+    text-decoration: none;
+    color: $colors-accent-400;
+
+}
+a:hover, a:focus {
+    text-decoration: underline;
+    color: $colors-accent-500;
+}
