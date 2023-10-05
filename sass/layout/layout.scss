@@ -9,13 +9,19 @@
 }
 
 .main {
-    width: min(100% - $size-800, $size-1000 );
-    margin-inline: auto;
-
-    padding: $size-800;
-    background: #00d2ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to 180deg, hsl(215, 65%, 53%), hsl(191, 100%, 50%));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to 180deg, hsl(215, 65%, 53%), hsl(191, 100%, 50%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: min(100% - $size-800, $size-1000 );
+  margin-inline: auto;
+  border-radius: 8px;
+  max-width: 1000px;
+  height: 600px;
+  padding: $size-800;
+  background: #00d2ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to 180deg, hsl(215, 65%, 53%), hsl(191, 100%, 50%));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to 180deg, hsl(215, 65%, 53%), hsl(191, 100%, 50%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     @include breakpoint-up(medium) {
         background: linear-gradient(200deg, hsl(215, 65%, 53%), hsl(191, 100%, 50%));
