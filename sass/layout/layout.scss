@@ -3,38 +3,36 @@
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-inline: $size-500;
+    justify-content: end;
+    padding-inline: $size-700;
+    padding-top: $size-700;
+}
+
+.main {
     width: min(100% - $size-800, $size-1000 );
     margin-inline: auto;
+
+    padding: $size-800;
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to 180deg, hsl(215, 65%, 53%), hsl(191, 100%, 50%));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to 180deg, hsl(215, 65%, 53%), hsl(191, 100%, 50%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    @include breakpoint-up(medium) {
+        background: linear-gradient(200deg, hsl(215, 65%, 53%), hsl(191, 100%, 50%));
+    }
+    @include breakpoint-up(large) {
+        background: linear-gradient(220deg, hsl(215, 65%, 53%), hsl(191, 100%, 50%));
+    }
 }
 
 .flex {
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    gap: $size-700;
 
-
-
-    width: min(100% - $size-800, $size-1000 );
-    margin-inline: auto;
-
-        @include breakpoint-up(large) {
-            grid-template-columns: 2fr 1fr;
-            grid-template-rows: auto;
-
-        }
-
-    &__main {
-        padding: $size-800;
-        background: rgb(7, 7, 169);
-        background: linear-gradient(180deg, rgba(7, 7, 169, 1) 0%, rgb(91, 130, 194) 100%);
-        @include breakpoint-up(medium) {
-            background: linear-gradient(200deg, rgba(7, 7, 169, 1) 0%, rgb(91, 130, 194) 100%);
-        }
-        @include breakpoint-up(large) {
-            background: linear-gradient(220deg, rgba(7, 7, 169, 1) 0%, rgb(91, 130, 194) 100%);
-        }
-    }
 }
+

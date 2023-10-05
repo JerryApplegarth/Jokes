@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+button {
+    background: $colors-accent-500;
+    color: $colors-primary-200;
+    font-size: $size-500;
+    font-weight: $font-weight-700;
+    padding: $size-200 $size-300;
+    border: none;
+    border-radius: $size-200;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    background: $colors-accent-400;
+    text-decoration: underline;
+}
