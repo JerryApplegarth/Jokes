@@ -1,13 +1,13 @@
 @use '../abstracts/' as *;
 
 body {
-    font-family: $font-family-base;
-    font-weight: $font-weight-400;
-    font-size: $size-400;
-    background: $colors-primary-400;
-    color: $colors-primary-200;
-    font-family: $font-family-base;
-    line-height: 1.5;
+  font-family: $font-family-base;
+  font-weight: $font-weight-400;
+  font-size: $size-400;
+  background: $colors-primary-400;
+  color: $colors-primary-200;
+  font-family: $font-family-base;
+  line-height: 1.5;
   }
 
 h1 {
@@ -23,6 +23,7 @@ h1 {
 
 
 p {
+  color: $colors-accent-500;
     margin-top: 0;
     font-size: $size-600;
     letter-spacing: 1.1px;
